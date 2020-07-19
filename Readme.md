@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Марчик](https://up.htmlacademy.ru/adaptive/20/user/1480917).
-* Наставник: Егор Дорош.
+* Наставник: [Егор Дорош](https://htmlacademy.ru/profile/edorosh).
 
 ---
 

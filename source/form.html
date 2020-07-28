@@ -50,56 +50,61 @@
             </div>
           </fieldset>
           <fieldset>
-            <ul class="purpose-list">
+            <ul class="purpose">
               <li class="purpose__item">
-                <input class="purpose-selection" type="radio" name="purpose" value="slim" id="slim" checked>
+                <input class="purpose__selection" type="radio" name="purpose" value="slim" id="slim" checked>
                 <label for="slim">Похудение</label>
               </li>
               <li class="purpose__item">
-                <input class="purpose-selection" type="radio" name="purpose" value="weight-gain" id="weight-gain">
+                <input class="purpose__selection" type="radio" name="purpose" value="weight-gain" id="weight-gain">
                 <label for="weight-gain">Набор массы</label>
               </li>
               <li class="purpose__item">
-                <input class="purpose-selection" type="radio" name="purpose" value="unknown" id="unknown">
+                <input class="purpose__selection" type="radio" name="purpose" value="unknown" id="unknown">
                 <label for="unknown">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
-              <div class="contacts">
-                <label class="contacts__header" for="email">E-mail:<sup>*</sup></label>
-                <input class="contacts__email" type="email" name="email" id="email" value="kuklachev@gmail.com">
-              </div>
-              <div class="contacts">
-                <label class="contacts__header" for="phone">Телефон:<sup>*</sup></label>
-                <input class="contacts__phone" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
-              </div>
+            <div class="contacts">
+              <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
+                <div class="contacts__unit">
+                  <label class="contacts__header" for="email">E-mail:<sup>*</sup></label>
+                  <input class="contacts__email" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                </div>
+                <div class="contacts__unit">
+                  <label class="contacts__header" for="phone">Телефон:<sup>*</sup></label>
+                  <input class="contacts__phone" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+                </div>
+            </div>
           </fieldset>
           <fieldset>
-            <legend class="comment__legend">Комментарий</legend>
-              <textarea class="comment__text" name="letter" id="letter">Расскажите обо всех повадках кота</textarea>
+            <div class="comment">
+              <legend class="comment__legend">Комментарий</legend>
+                <textarea class="comment__text" name="letter" id="letter">Расскажите обо всех повадках кота</textarea>
+            </div>
           </fieldset>
           <fieldset>
-            <legend class="addition__legend">Дополнительно</legend>
-               <ul class="addition-list">
-                 <li class="addition__item">
-                   <input class="addition-selection" type="checkbox" name="addition-sweetener" id="sweetener" checked>
-                   <label for="sweetener">Сахарозаменитель</label>
-                 </li>
-                 <li class="addition__item">
-                   <input class="addition-selection" type="checkbox" name="addition-water" id="water">
-                   <label for="water">Питьевая вода</label>
-                 </li>
-                 <li class="addition__item">
-                   <input class="addition-selection" type="checkbox" name="addition-milk" id="milk">
-                   <label for="milk">Молоко</label>
-                 </li>
-                 <li class="addition__item">
-                   <input class="addition-selection" type="checkbox" name="addition-vitamins" id="vitamins">
-                   <label for="vitamins">Витамины</label>
-                 </li>
-               </ul>
+            <div class="addition">
+              <legend class="addition__legend">Дополнительно</legend>
+                <ul class="addition__list">
+                  <li class="addition__item">
+                    <input class="addition__selection" type="checkbox" name="addition-sweetener" id="sweetener" checked>
+                    <label for="sweetener">Сахарозаменитель</label>
+                  </li>
+                  <li class="addition__item">
+                    <input class="addition__selection" type="checkbox" name="addition-water" id="water">
+                    <label for="water">Питьевая вода</label>
+                  </li>
+                  <li class="addition__item">
+                    <input class="addition__selection" type="checkbox" name="addition-milk" id="milk">
+                    <label for="milk">Молоко</label>
+                  </li>
+                  <li class="addition__item">
+                    <input class="addition__selection" type="checkbox" name="addition-vitamins" id="vitamins">
+                    <label for="vitamins">Витамины</label>
+                  </li>
+                </ul>
           </fieldset>
           <button type="submit" class="button program-selection__button">Отправить заявку</button>
         </form>

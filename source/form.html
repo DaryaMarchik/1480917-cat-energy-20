@@ -34,33 +34,33 @@
       <section class="program-selection">
         <h1 class="program-selection__headline">Подбор программы</h1>
         <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form action="https://echo.htmlacademy.ru/" method="get" class="program-selection__form">
+        <form action="https://echo.htmlacademy.ru/" method="get" class="program-selection__form form">
           <fieldset>
             <div class="basic-information">
               <label class="basic-information__header" for="name">Имя:<sup>*</sup></label>
-              <input class="basic-information__name" type="text" name="name" id="name" value="Барсик">
+              <input class="form__input" type="text" name="name" id="name" value="Барсик">
             </div>
             <div class="basic-information">
               <label class="basic-information__header" for="weight">Вес (кг):<sup>*</sup></label>
-              <input class="basic-information__weight" type="number" name="weight" id="weight" value="7">
+              <input class="form__input" type="number" name="weight" id="weight" value="7">
             </div>
             <div class="basic-information">
               <label class="basic-information__header" for="age">Возраст (лет):</label>
-              <input class="basic-information__age" type="number" name="age" id="age" value="7">
+              <input class="form__input" type="number" name="age" id="age" value="7">
             </div>
           </fieldset>
           <fieldset>
             <ul class="purpose">
               <li class="purpose__item">
-                <input class="purpose__selection" type="radio" name="purpose" value="slim" id="slim" checked>
+                <input class="form__input" type="radio" name="purpose" value="slim" id="slim" checked>
                 <label for="slim">Похудение</label>
               </li>
               <li class="purpose__item">
-                <input class="purpose__selection" type="radio" name="purpose" value="weight-gain" id="weight-gain">
+                <input class="form__input" type="radio" name="purpose" value="weight-gain" id="weight-gain">
                 <label for="weight-gain">Набор массы</label>
               </li>
               <li class="purpose__item">
-                <input class="purpose__selection" type="radio" name="purpose" value="unknown" id="unknown">
+                <input class="form__input" type="radio" name="purpose" value="unknown" id="unknown">
                 <label for="unknown">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -70,18 +70,18 @@
               <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
                 <div class="contacts__unit">
                   <label class="contacts__header" for="email">E-mail:<sup>*</sup></label>
-                  <input class="contacts__email" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                  <input class="form__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
                 </div>
                 <div class="contacts__unit">
                   <label class="contacts__header" for="phone">Телефон:<sup>*</sup></label>
-                  <input class="contacts__phone" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+                  <input class="form__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
                 </div>
             </div>
           </fieldset>
           <fieldset>
             <div class="comment">
               <legend class="comment__legend">Комментарий</legend>
-                <textarea class="comment__text" name="letter" id="letter">Расскажите обо всех повадках кота</textarea>
+                <textarea class="form__input" name="letter" id="letter">Расскажите обо всех повадках кота</textarea>
             </div>
           </fieldset>
           <fieldset>
@@ -89,19 +89,19 @@
               <legend class="addition__legend">Дополнительно</legend>
                 <ul class="addition__list">
                   <li class="addition__item">
-                    <input class="addition__selection" type="checkbox" name="addition-sweetener" id="sweetener" checked>
+                    <input class="form__input" type="checkbox" name="addition-sweetener" id="sweetener" checked>
                     <label for="sweetener">Сахарозаменитель</label>
                   </li>
                   <li class="addition__item">
-                    <input class="addition__selection" type="checkbox" name="addition-water" id="water">
+                    <input class="form__input" type="checkbox" name="addition-water" id="water">
                     <label for="water">Питьевая вода</label>
                   </li>
                   <li class="addition__item">
-                    <input class="addition__selection" type="checkbox" name="addition-milk" id="milk">
+                    <input class="form__input" type="checkbox" name="addition-milk" id="milk">
                     <label for="milk">Молоко</label>
                   </li>
                   <li class="addition__item">
-                    <input class="addition__selection" type="checkbox" name="addition-vitamins" id="vitamins">
+                    <input class="form__input" type="checkbox" name="addition-vitamins" id="vitamins">
                     <label for="vitamins">Витамины</label>
                   </li>
                 </ul>

@@ -1,0 +1,12 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+.button--green {
+  color: #ffffff;
+  background-color: $basic-green;
+}

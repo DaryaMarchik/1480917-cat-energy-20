@@ -20,14 +20,7 @@
 }
 
 .catalog__button {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  background-color: $basic-green;
 }
 
 .catalog__to-next-title {
@@ -40,18 +33,13 @@
 }
 
 .catalog__to-next-text {
-  font-family: "Arial", "Calibri", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
 }
 
 .catalog__to-next-button {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 0px;
-  text-transform: uppercase;
   color: $dark-grey;
-  text-decoration: none;
   background-color: $basic-grey;
 }

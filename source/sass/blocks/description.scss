@@ -2,4 +2,31 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.description__wrapper {
+  grid-row: 1;
+  grid-column: 2;
+  min-height: 112px;
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+  }
+}
+
+.description__criterion {
+  grid-column-start: 1;
+  @media (min-width: $tablet-width) {
+  padding-bottom: 9px;
+}
+}
+
+.description__identification {
+  text-align: right;
+  grid-column-start: 2;
+  @media (min-width: $tablet-width) {
+  padding-bottom: 9px;
+}
 }

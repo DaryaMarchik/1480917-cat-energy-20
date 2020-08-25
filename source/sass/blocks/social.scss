@@ -1,3 +1,29 @@
 .social__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 129px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__icon--fb {
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 27px;
+  }
+}
+
+.social__icon--vk {
+  @media (min-width: $tablet-width) {
+    width: 29px;
+    height: 17px;
+  }
+}
+
+.social__icon--insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+  }
 }

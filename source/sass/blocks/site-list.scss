@@ -5,11 +5,13 @@
   font-size: 20px;
   line-height: 20px;
   background-color: #ffffff;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -22,13 +24,15 @@
   position: relative;
   text-decoration: none;
   color: #000000;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
   padding: 22px 0 24px 0;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
   }
+
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }

@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 24px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 53px;
   }
@@ -23,6 +24,7 @@
   @media (max-width: $desktop-width) {
     display: none;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
   }

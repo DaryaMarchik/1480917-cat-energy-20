@@ -5,10 +5,48 @@
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+  }
 }
 
 .location__address {
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 159px;
+    text-align: right;
+  }
+}
+
+.location__wrapper {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: #ffffff;
+    width: 570px;
+    top: 95px;
+    justify-content: space-around;
+  }
+}
+
+.location {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }

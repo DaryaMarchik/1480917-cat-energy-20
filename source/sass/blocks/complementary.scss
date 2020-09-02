@@ -4,10 +4,19 @@
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 100px;
+  }
 }
 
 .complementary__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 57px;
 }
 
 .complementary__item-title {
@@ -17,4 +26,30 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1;
+    margin: 0;
+  }
+}
+
+.complementary__item-button {
+  display: block;
+  padding: 6px 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+.complementary__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 632px;
+    margin: 0 auto;
+  }
 }

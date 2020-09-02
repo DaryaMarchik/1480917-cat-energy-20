@@ -7,6 +7,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   font-family: "Arial", "Calibri", sans-serif;
+  margin: 0;
 }
 
 .page__footer {
@@ -52,6 +53,7 @@
 .page__header {
   background-color: #ffffff;
   display: flex;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -59,34 +61,5 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-  }
-}
-
-.page__container {
-  @media (min-width: $mobile-width) {
-    width: 280px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 709px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
-}
-
-.page__background-desktop {
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    margin-bottom: 82px;
   }
 }

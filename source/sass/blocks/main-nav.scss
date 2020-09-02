@@ -31,7 +31,7 @@
 
 .main-nav {
   position: relative;
-  min-height: 66px;
+  min-height: 20px;
   width: auto;
 }
 
@@ -55,8 +55,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 85px;
+  top: -27px;
+  left: 0;
   width: 24px;
   height: 1.5px;
   background-color: #000000;
@@ -73,10 +73,10 @@
   }
 
   .main-nav--opened .main-nav__wrapper {
-    position: absolute;
-    top: 66px;
+    position: relative;
+    top: 0;
     right: 0;
-    left: -192px;
+    left: 0;
     z-index: 10;
     min-height: 20vh;
     background-color: #ffffff;
@@ -106,8 +106,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 65px;
+    top: -20px;
+    left: 230px;
     width: 25px;
     height: 1.5px;
     background-color: #000000;

@@ -2,4 +2,21 @@
   font-size: 14px;
   line-height: 14px;
   color: $dark-grey;
+  display: grid;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2;
+  }
+}
+
+.additional__size {
+  grid-column: 1;
+}
+
+.additional__cost {
+  grid-column: 2;
+  text-align: right;
 }

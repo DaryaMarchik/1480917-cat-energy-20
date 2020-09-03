@@ -1,9 +1,40 @@
 .assortment-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .assortment-list__item {
   background-color: $basic-grey;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 374px;
+    width: 570px;
+  }
 }
 
 .assortment-list__title {
@@ -13,12 +44,39 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 30px auto 29px 91px;
+
+  @media (min-width: $tablet-width) {
+    margin: 77px auto 24px 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 77px 51px 73px 214px;
+  }
 }
 
 .assortment-list__description {
   color: $dark-grey;
   font-size: 14px;
   line-height: 18px;
+  margin: 0 auto 38px 20px;
+  text-align: left;
+  max-width: 227px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 375px;
+    margin: 0 auto 48px 52px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 23px 52px;
+    max-width: 467px;
+  }
 }
 
 .assortment-list__link {
@@ -28,4 +86,12 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin: 0 auto 18px 19px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 53px 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

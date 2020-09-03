@@ -1,0 +1,11 @@
+.header {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  }
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

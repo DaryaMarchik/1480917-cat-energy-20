@@ -3,10 +3,35 @@
   line-height: 24px;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
+  grid-row: 1;
+  text-align: center;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .number-list__description {
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
+  grid-row: 2;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.number-list {
+  display: grid;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }

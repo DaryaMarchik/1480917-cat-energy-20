@@ -4,6 +4,20 @@
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 35px;
+  position: relative;
+  border-bottom: 1px solid #cdcdcd;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    width: 53px;
+    height: 2px;
+    left: 247px;
+    top: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -38,6 +52,17 @@
 .complementary__item-button {
   display: block;
   padding: 6px 44px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #cdcdcd;
+    top: 50px;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 632px;

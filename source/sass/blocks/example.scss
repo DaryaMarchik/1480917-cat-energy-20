@@ -56,11 +56,35 @@
 }
 
 .example__switch-text {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  &:first-of-type::before {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    top: 3px;
+    left: 70px;
+  }
+
+  &:first-of-type::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $basic-green;
+    top: 7px;
+    left: 75px;
+  }
 }
 
 .example {

@@ -5,9 +5,19 @@
   line-height: 36px;
   color: #000000;
   margin: 0;
-  border-bottom: 1px solid #ebebeb;
   padding-top: 27px;
   padding-bottom: 41px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 100px;
+    left: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -20,6 +30,7 @@
 .catalog__list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -30,13 +41,23 @@
 }
 
 .catalog__item {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 112px auto;
   grid-row-gap: 22px;
   box-sizing: border-box;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ebebeb;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 195px;
+    left: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -157,6 +178,7 @@
   align-items: center;
   min-height: 158px;
   justify-content: center;
+  padding-top: 55px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -211,6 +233,29 @@
   display: block;
   padding: 10px 0;
   line-height: 20px;
+  position: relative;
+  margin-bottom: 43px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-plus-mobile.svg");
+    width: 30px;
+    height: 30px;
+    top: -100px;
+    left: 125px;
+    opacity: 0.4;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 70px;
+    left: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 249px;

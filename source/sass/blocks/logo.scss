@@ -29,3 +29,21 @@
     display: block;
   }
 }
+
+.logo-footer {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 45px;
+    left: -75px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

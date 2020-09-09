@@ -57,10 +57,9 @@
   position: absolute;
   top: -27px;
   left: 0;
+  background-image: url("../img/icon-mobile-menu.svg");
   width: 24px;
-  height: 1.5px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  height: 16px;
 }
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {

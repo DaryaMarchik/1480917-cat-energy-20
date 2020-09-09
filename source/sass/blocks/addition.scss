@@ -1,5 +1,18 @@
 .addition__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .addition__item {
@@ -8,4 +21,21 @@
   text-transform: uppercase;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.addition__item label {
+  margin-left: 18px;
+}
+
+.addition__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 72px;
+  }
 }

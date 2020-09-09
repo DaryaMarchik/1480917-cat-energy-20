@@ -4,6 +4,12 @@
   text-transform: uppercase;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
+  grid-column: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__legend {
@@ -11,4 +17,39 @@
   line-height: 26px;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
+  padding: 0;
+  margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    width: 150px;
+    height: 2px;
+    top: 13px;
+    left: 215px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.form__wrapper-desktop {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

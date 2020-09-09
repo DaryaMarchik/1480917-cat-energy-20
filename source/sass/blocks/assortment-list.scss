@@ -38,6 +38,7 @@
 }
 
 .assortment-list__title {
+  position: relative;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
@@ -45,6 +46,17 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 30px auto 29px 91px;
+
+  &::before {
+    content: "";
+    background-color: $basic-green;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -5px;
+    left: -70px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 77px auto 24px 53px;
@@ -57,13 +69,50 @@
   }
 }
 
+.assortment-list__title--slim {
+  &::after {
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 36px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -64px;
+  }
+}
+
+.assortment-list__title--pro {
+  &::after {
+    content: "";
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -80px;
+  }
+}
+
 .assortment-list__description {
+  position: relative;
   color: $dark-grey;
   font-size: 14px;
   line-height: 18px;
   margin: 0 auto 38px 20px;
   text-align: left;
   max-width: 227px;
+
+  &::after {
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    left: 0;
+    top: 110px;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 375px;
@@ -80,6 +129,7 @@
 }
 
 .assortment-list__link {
+  position: relative;
   text-decoration: none;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
@@ -88,6 +138,16 @@
   text-transform: uppercase;
   margin: 0 auto 18px 19px;
   display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    width: 22px;
+    height: 10px;
+    left: 100px;
+    top: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 53px 52px;

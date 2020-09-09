@@ -1,5 +1,6 @@
 .gift {
   position: relative;
+  margin-bottom: 35px;
 }
 
 .gift__title {
@@ -11,4 +12,21 @@
   color: #ffffff;
   text-align: center;
   width: 161px;
+}
+
+.gift__img {
+  display: block;
+}
+
+.gift__link {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    top: 60px;
+    left: 100px;
+    background-repeat: no-repeat;
+  }
 }

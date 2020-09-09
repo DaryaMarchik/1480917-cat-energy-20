@@ -5,6 +5,11 @@
   font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__description {
@@ -13,14 +18,44 @@
   color: #000000;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .program-selection__legend {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 .program-selection__button {
   border: none;
+  width: 100%;
+  padding: 7px 44px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }

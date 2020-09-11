@@ -21,6 +21,7 @@
   text-transform: uppercase;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -29,7 +30,19 @@
 }
 
 .addition__item label {
-  margin-left: 18px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.addition__item label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  top: 0;
+  left: -40px;
 }
 
 .addition__wrapper {

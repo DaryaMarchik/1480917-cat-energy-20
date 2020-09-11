@@ -11,10 +11,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 183px;
   }
 }
 
 .advantages__list {
+  position: relative;
   list-style: none;
   margin: 0 auto 0 80px;
   padding: 0;
@@ -25,6 +27,16 @@
     max-width: 708px;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #e6e6e6;
+      width: 768px;
+      height: 1px;
+      top: 460px;
+      left: -30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,8 +55,47 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 180px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "1";
+      color: #f2f2f2;
+      font-size: 280px;
+      background-color: transparent;
+      left: 100px;
+      z-index: -1;
+      top: -10px;
+    }
   }
 }
+
+.advantages__item--quickness .advantages__description {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "2";
+    }
+  }
+}
+
+.advantages__item--functionality .advantages__description {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "3";
+    }
+  }
+}
+
+.advantages__item--result .advantages__description {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "4";
+    }
+  }
+}
+
 
 .advantages__item {
   display: block;
@@ -62,6 +113,13 @@
     height: 60px;
     background-color: $basic-green;
     left: -80px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: -100px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -83,6 +141,11 @@
     height: 40px;
     left: -72px;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      top: -85px;
+    }
   }
 }
 
@@ -95,6 +158,11 @@
     height: 40px;
     left: -74px;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      top: -85px;
+    }
   }
 }
 
@@ -107,6 +175,11 @@
     height: 40px;
     left: -75px;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      top: -85px;
+    }
   }
 }
 
@@ -119,11 +192,16 @@
     height: 40px;
     left: -75px;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      top: -85px;
+    }
   }
 }
 
 .advantages {
   @media (min-width: $tablet-width) {
-    margin-bottom: 90px;
+    margin-bottom: 0;
   }
 }

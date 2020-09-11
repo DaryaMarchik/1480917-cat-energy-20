@@ -1,6 +1,10 @@
 .gift {
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 .gift__title {

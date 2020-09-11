@@ -4,7 +4,7 @@
   text-transform: uppercase;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
-  display: grid;
+  display: flex;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +15,11 @@
   @media (min-width: $desktop-width) {
     width: 50%;
   }
+}
+
+.contacts__unit label {
+  flex-shrink: 1;
+  margin-right: 10px;
 }
 
 .contacts__wrapper {
@@ -34,6 +39,10 @@
     background-color: #d9d9d9;
     top: -20px;
     left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -48,6 +57,14 @@
     background-image: url("../img/icon-mail.svg");
     top: 10px;
     left: 250px;
+
+    @media (min-width: $tablet-width) {
+      left: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 570px;
+    }
   }
 }
 
@@ -63,5 +80,13 @@
     top: 8px;
     left: 250px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 570px;
+    }
   }
 }

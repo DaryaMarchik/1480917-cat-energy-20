@@ -4,7 +4,7 @@
   text-transform: uppercase;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
-  grid-column: 2;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -25,10 +25,39 @@
     position: absolute;
     content: "";
     background-color: $basic-green;
-    width: 150px;
+    width: 85px;
     height: 2px;
     top: 13px;
     left: 215px;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      left: 550px;
+      width: 145px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 550px;
+      width: 778px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      width: 30px;
+      height: 2px;
+      top: 20px;
+      left: -80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -52,4 +81,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.form__radio:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  top: 8px;
+  left: -33px;
+}
+
+.form__checkbox:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-tick.svg");
+  top: 8px;
+  left: -32px;
 }

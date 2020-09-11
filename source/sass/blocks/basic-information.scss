@@ -5,7 +5,7 @@
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 13px;
-  display: grid;
+  display: flex;
   position: relative;
 
   &:last-child {
@@ -20,12 +20,16 @@
     background-color: #d9d9d9;
     top: 60px;
     left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .basic-information__header {
   margin-right: 15px;
-  grid-column: 1;
+  flex-shrink: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

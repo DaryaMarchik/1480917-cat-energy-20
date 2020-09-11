@@ -20,6 +20,23 @@
 
 .description__criterion {
   grid-column-start: 1;
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 250px;
+      height: 1px;
+      background-color: #cdcdcd;
+      top: 23px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 9px;

@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
 }
 
 .purpose__item {
@@ -11,6 +19,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -19,5 +28,18 @@
 }
 
 .purpose__item label {
-  margin-left: 15px;
+  margin-left: 45px;
+  position: relative;
+}
+
+.purpose__item label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  top: 0;
+  left: -40px;
 }

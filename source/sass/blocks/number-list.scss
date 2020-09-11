@@ -17,6 +17,13 @@
     background-repeat: no-repeat;
     left: 0;
     top: -7px;
+
+    @media (min-width: $tablet-width) {
+      left: 18px;
+      width: 162px;
+      height: 72px;
+      background-image: url("../img/weight-back-tablet.svg");
+    }
   }
 
   &:last-of-type::before {
@@ -28,11 +35,19 @@
     background-repeat: no-repeat;
     left: 14px;
     top: -7px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/weight-back-tablet.svg");
+      left: 37px;
+      width: 162px;
+      height: 72px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-left: 40px;
   }
 }
 
@@ -47,6 +62,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    padding-left: 50px;
   }
 }
 

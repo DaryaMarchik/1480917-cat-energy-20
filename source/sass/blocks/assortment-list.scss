@@ -56,6 +56,19 @@
     border-radius: 50%;
     top: -5px;
     left: -70px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      left: -165px;
+      top: -30px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -73,12 +86,26 @@
   &::after {
     content: "";
     background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
     width: 36px;
     height: 50px;
     display: block;
     position: absolute;
     top: -10px;
     left: -64px;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+      left: 420px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      left: -150px;
+      top: -31px;
+    }
   }
 }
 
@@ -92,6 +119,20 @@
     position: absolute;
     top: 5px;
     left: -80px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      left: 360px;
+      top: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      left: -190px;
+      top: -15px;
+    }
   }
 }
 
@@ -112,6 +153,10 @@
     position: absolute;
     left: 0;
     top: 110px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -147,6 +192,11 @@
     height: 10px;
     left: 100px;
     top: 3px;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 120px;
+    }
   }
 
   @media (min-width: $tablet-width) {

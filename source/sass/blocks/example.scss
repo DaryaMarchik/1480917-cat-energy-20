@@ -48,10 +48,12 @@
   @media (min-width: $tablet-width) {
     text-align: right;
     font-size: 20px;
+    padding-left: 160px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding-left: 0;
   }
 }
 
@@ -73,6 +75,15 @@
     background-color: #ffffff;
     top: 3px;
     left: 70px;
+
+    @media (min-width: $tablet-width) {
+      width: 428px;
+      height: 6px;
+      border: none;
+      background-color: #dcdcdc;
+      top: 12px;
+      left: 80px;
+    }
   }
 
   &:first-of-type::after {
@@ -84,6 +95,34 @@
     background-color: $basic-green;
     top: 7px;
     left: 75px;
+
+    @media (min-width: $tablet-width) {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+      background-color: #ffffff;
+      top: 0;
+      left: 290px;
+    }
+  }
+
+  &:last-of-type::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      top: 13px;
+      left: -236px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -107,7 +146,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
-    width: 460px;
+    width: 590px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,5 +163,17 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
+}
+
+.example__top-desktop {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }

@@ -38,6 +38,21 @@
 .purpose__item label {
   margin-left: 45px;
   position: relative;
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: #222222;
+    opacity: 0.3;
+
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
 }
 
 .purpose__item label::before {
@@ -56,23 +71,5 @@
     height: 40px;
     top: -5px;
     left: -60px;
-  }
-}
-
-
-.purpose__item label {
-  &:hover {
-    &::before {
-      border: 1px solid #bababa;
-    }
-  }
-
-  &:active {
-    color: #222222;
-    opacity: 0.3;
-
-    &::before {
-      border: 1px solid #bababa;
-    }
   }
 }

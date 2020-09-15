@@ -221,19 +221,19 @@
     margin: 0 auto 57px 52px;
     font-size: 20px;
     line-height: 30px;
-  }
-}
 
-.assortment-list__link {
-  &:hover {
-    &::after {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
+    &:hover {
+      &::after {
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
     }
-  }
-  &:active {
-    opacity: 0.3;
-    &::after {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
+
+    &:active {
+      opacity: 0.3;
+
+      &::after {
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
     }
   }
 }

@@ -167,11 +167,11 @@
 }
 
 .example__switch-text:hover:first-of-type::after {
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
 }
 
 .example__switch-text:active:first-of-type::after {
-    border: 1px solid #68B738;
+  border: 1px solid #68b738;
 }
 
 

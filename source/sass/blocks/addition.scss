@@ -40,6 +40,25 @@
 .addition__item label {
   position: relative;
   margin-left: 40px;
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    &::before {
+      border: 1px solid #bababa;
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .addition__item label::before {
@@ -57,26 +76,6 @@
     height: 40px;
     top: -5px;
     left: -59px;
-  }
-}
-
-.addition__item label {
-  &:hover {
-    &::before {
-      border: 1px solid #bababa;
-    }
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-
-    &::before {
-      border: 1px solid #bababa;
-      opacity: 0.3;
-    }
-    &::after {
-      opacity: 1;
-    }
   }
 }
 

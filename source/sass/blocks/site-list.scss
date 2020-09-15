@@ -29,11 +29,12 @@
 
 .site-list__item--active {
   position: relative;
+
   @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       content: "";
-      background-color: #68B738;
+      background-color: #68b738;
       height: 2px;
       right: 0;
       bottom: 0;

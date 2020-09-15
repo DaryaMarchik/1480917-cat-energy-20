@@ -4,6 +4,31 @@
   text-transform: uppercase;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  padding-top: 13px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  height: 46px;
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:required:invalid {
+    border: 2px solid #ff8282;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 38px;
+    height: 52px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
 }
 
 .form__legend {
@@ -11,4 +36,118 @@
   line-height: 26px;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
+  padding: 0;
+  margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    width: 98px;
+    height: 2px;
+    top: 16px;
+    left: 202px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: 552px;
+      width: 145px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 550px;
+      width: 778px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      width: 39px;
+      height: 2px;
+      top: 22px;
+      left: -80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      left: -110px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 74px;
+  }
+}
+
+.addition .form__legend {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 22px;
+    }
+  }
+}
+
+.form {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.form__wrapper-desktop {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -5px;
+  }
+}
+
+.form__radio:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  top: 8px;
+  left: -36px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 6px;
+    left: -49px;
+  }
+}
+
+.form__checkbox:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-tick.svg");
+  top: 8px;
+  left: -39px;
+
+  @media (min-width: $tablet-width) {
+    left: -48px;
+  }
+}
+
+input::placeholder {
+  opacity: 1;
 }

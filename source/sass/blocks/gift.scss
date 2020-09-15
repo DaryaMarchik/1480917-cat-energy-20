@@ -1,14 +1,67 @@
 .gift {
   position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 .gift__title {
   position: absolute;
-  top: 170px;
+  top: 186px;
   left: 58px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
   width: 161px;
+}
+
+.gift__image-wrapper {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 93px;
+    height: 62px;
+    background-image: url("../img/icon-gift.svg");
+    top: 63px;
+    left: 111px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 64px;
+      left: 89px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 95px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "Закажите все \0a и получите чехол для \0a кота в подарок!";
+    white-space: pre;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    top: 187px;
+    left: 60px;
+    background-repeat: no-repeat;
+    width: 159px;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      top: 70px;
+      left: 423px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+      top: 186px;
+      left: 43px;
+    }
+  }
 }

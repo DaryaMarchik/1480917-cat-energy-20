@@ -10,6 +10,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 }
 
@@ -38,6 +39,7 @@
 }
 
 .assortment-list__title {
+  position: relative;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
@@ -45,6 +47,31 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 30px auto 29px 91px;
+
+  &::before {
+    content: "";
+    background-color: $basic-green;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -6px;
+    left: -69px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: 392px;
+      top: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      left: -164px;
+      top: -31px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 77px auto 24px 53px;
@@ -57,41 +84,156 @@
   }
 }
 
+.assortment-list__title--slim {
+  &::after {
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: -62px;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+      left: 423px;
+      top: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      left: -149px;
+      top: -37px;
+    }
+  }
+}
+
+.assortment-list__title--pro {
+  &::after {
+    content: "";
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -78px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      left: 358px;
+      top: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      left: -183px;
+      top: -11px;
+    }
+  }
+}
+
 .assortment-list__description {
+  position: relative;
   color: $dark-grey;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 auto 38px 20px;
+  margin: 0 auto 42px 20px;
   text-align: left;
   max-width: 227px;
 
+  &::after {
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    left: 0;
+    top: 112px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 375px;
-    margin: 0 auto 48px 52px;
+    margin: 0 auto 52px 52px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 23px 52px;
+    margin: 0 auto 26px 50px;
     max-width: 467px;
   }
 }
 
+.assortment-list__item:last-of-type .assortment-list__description {
+  @media (min-width: $tablet-width) {
+    max-width: 342px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 457px;
+  }
+}
+
 .assortment-list__link {
+  position: relative;
   text-decoration: none;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin: 0 auto 18px 19px;
+  margin: 0 auto 22px 19px;
   display: block;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 10px;
+    left: 100px;
+    top: 3px;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 131px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 134px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0 auto 53px 52px;
+    margin: 0 auto 57px 52px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      &::after {
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      &::after {
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
   }
 }

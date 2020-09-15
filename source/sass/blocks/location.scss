@@ -1,16 +1,26 @@
 .location__headline {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   margin: 0;
+  flex-shrink: 0;
+  width: 131px;
+  margin-right: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     width: 171px;
+    margin-left: 40px;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+    margin-left: 76px;
   }
 }
 
@@ -24,16 +34,22 @@
     font-size: 16px;
     width: 159px;
     text-align: right;
+    margin-top: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
 .location__wrapper {
   display: flex;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    padding-top: 67px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,12 +57,27 @@
     background-color: #ffffff;
     width: 570px;
     top: 95px;
-    justify-content: space-around;
+    justify-content: flex-start;
+    left: 107px;
+    padding-bottom: 62px;
   }
 }
 
 .location {
   @media (min-width: $desktop-width) {
     position: relative;
+  }
+}
+
+.location--grey {
+  background-color: $basic-grey;
+}
+
+.location iframe {
+  height: 362px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }

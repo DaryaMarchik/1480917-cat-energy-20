@@ -3,4 +3,19 @@
   color: #444444;
   font-size: 16px;
   line-height: 18px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  &:hover {
+    stroke: $basic-green;
+  }
+
+  &:active {
+    stroke: $basic-green;
+    opacity: 0.3;
+  }
 }

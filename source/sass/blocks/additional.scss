@@ -9,14 +9,36 @@
     font-size: 16px;
     line-height: 20px;
     grid-column: 2;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 109px;
   }
 }
 
 .additional__size {
   grid-column: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .additional__cost {
   grid-column: 2;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

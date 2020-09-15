@@ -1,0 +1,42 @@
+.comment textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    height: 175px;
+    padding-top: 10px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 67px;
+  }
+}
+
+.comment {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    width: 61px;
+    height: 2px;
+    top: -44px;
+    left: 142px;
+
+    @media (min-width: $tablet-width) {
+      width: 335px;
+      top: -88px;
+      left: 218px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -90px;
+    }
+  }
+}

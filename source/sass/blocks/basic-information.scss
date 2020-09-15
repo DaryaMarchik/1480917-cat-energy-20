@@ -4,4 +4,40 @@
   text-transform: uppercase;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;
+  margin-bottom: 14px;
+  display: flex;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+    }
+  }
+
+  &:last-of-type::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 66px;
+    left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.basic-information__header {
+  margin-right: 15px;
+  flex-shrink: 1;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

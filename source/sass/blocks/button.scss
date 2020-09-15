@@ -8,4 +8,13 @@
 .button--green {
   color: #ffffff;
   background-color: $basic-green;
+
+  &:hover {
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

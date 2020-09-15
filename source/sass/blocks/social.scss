@@ -4,9 +4,11 @@
   margin: 0;
   padding: 0;
   display: flex;
-  width: 129px;
+  width: 128px;
   justify-content: space-between;
   align-items: center;
+  padding-top: 14px;
+  margin-left: 71px;
 
   &::after {
     position: absolute;
@@ -14,12 +16,21 @@
     width: 280px;
     height: 1px;
     background-color: #d9d9d9;
-    top: 45px;
+    top: 55px;
     left: -75px;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
   }
 }
 
@@ -40,5 +51,16 @@
 .social__icon--insta {
   @media (min-width: $tablet-width) {
     width: 23px;
+  }
+}
+
+.social__icon {
+  &:hover {
+    stroke: #68B738;
+    stroke-width: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

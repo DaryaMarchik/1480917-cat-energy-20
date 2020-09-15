@@ -5,8 +5,9 @@
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   grid-row: 1;
-  text-align: center;
   padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-left: 42px;
 
   &:first-child::before {
     position: absolute;
@@ -16,10 +17,10 @@
     height: 56px;
     background-repeat: no-repeat;
     left: 0;
-    top: -7px;
+    top: -14px;
 
     @media (min-width: $tablet-width) {
-      left: 18px;
+      left: -1px;
       width: 162px;
       height: 72px;
       background-image: url("../img/weight-back-tablet.svg");
@@ -33,12 +34,12 @@
     width: 130px;
     height: 56px;
     background-repeat: no-repeat;
-    left: 14px;
-    top: -7px;
+    left: 20px;
+    top: -14px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/weight-back-tablet.svg");
-      left: 37px;
+      left: 26px;
       width: 162px;
       height: 72px;
     }
@@ -47,7 +48,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding-left: 40px;
+    padding-left: 56px;
   }
 }
 
@@ -58,20 +59,49 @@
   grid-row: 2;
   text-align: center;
   margin: 0;
+  width: 77px;
+  margin-left: 23px;
+
+  &:last-of-type {
+    margin-left: 43px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+      margin-top: -12px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    padding-left: 50px;
+    padding-left: 8px;
+    margin-top: -12px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    text-align: left;
+
+    &:last-of-type {
+      margin-top: 0;
+    }
   }
 }
 
 .number-list {
   display: grid;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+  column-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 50px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 400px;
+    margin-bottom: 73px;
+    column-gap: 0;
   }
 }

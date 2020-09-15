@@ -12,9 +12,11 @@
   grid-row: 1;
   grid-column: 2;
   min-height: 112px;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1;
+    padding-top: 0;
   }
 }
 
@@ -39,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
+    padding-bottom: 16px;
   }
 }
 
@@ -50,4 +52,8 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 9px;
   }
+}
+
+.description__wrapper a {
+  text-decoration: none;
 }

@@ -2,14 +2,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
+    padding-top: 29px;
+    padding-left: 42px;
+    margin-right: 38px;
+    padding-bottom: 6px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 40px;
+    margin-left: 37px;
+    margin-right: 1px;
+    padding-top: 31px;
   }
 }
 
@@ -19,11 +26,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 23px;
   }
 }
 
@@ -40,6 +48,31 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
-  top: 0;
-  left: -40px;
+  top: -1px;
+  left: -44px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -60px;
+  }
+}
+
+
+.purpose__item label {
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: #222222;
+    opacity: 0.3;
+
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
 }

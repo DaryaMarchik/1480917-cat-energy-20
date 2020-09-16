@@ -10,20 +10,20 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     background-color: transparent;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -63,7 +63,7 @@
   position: relative;
   text-decoration: none;
   color: #000000;
-  padding: 22px 0 24px 0;
+  padding: 23px 0 24px 0;
   text-align: center;
 
   &::after {

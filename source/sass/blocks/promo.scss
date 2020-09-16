@@ -15,11 +15,20 @@
   padding-top: 27px;
   padding-bottom: 140px;
 
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
   }
 
   @media (min-width: $desktop-width) {
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 1440px auto;
+    }
     padding-bottom: 239px;
   }
 }

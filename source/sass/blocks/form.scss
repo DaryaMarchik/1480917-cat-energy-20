@@ -11,6 +11,15 @@
   padding-bottom: 15px;
   height: 46px;
 
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
   &:focus {
     border: 2px solid #444444;
     outline: none;

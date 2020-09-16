@@ -81,3 +81,27 @@
     height: 400px;
   }
 }
+
+.location__map {
+  width: 100%;
+  height: 362px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.location__map-picture {
+  display: none;
+  height: 362px;
+  width: auto;
+
+  &--nojs {
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

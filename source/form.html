@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -235,11 +236,11 @@
           <fieldset>
             <div class="basic-information">
               <label class="basic-information__header" for="name">Имя:<sup>*</sup></label>
-              <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+              <input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Барсик" required>
             </div>
             <div class="basic-information">
               <label class="basic-information__header" for="weight">Вес (кг):<sup>*</sup></label>
-              <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
+              <input class="form__input form__input--weight" type="number" name="weight" id="weight" placeholder="7" required>
             </div>
             <div class="basic-information">
               <label class="basic-information__header" for="age">Возраст (лет):</label>
@@ -249,7 +250,7 @@
           <fieldset>
             <ul class="purpose">
               <li class="purpose__item">
-                <input class="visually-hidden form__radio" type="radio" name="purpose" value="slim" id="slim" checked>
+                <input class="visually-hidden form__radio" type="radio" name="purpose" value="slim" id="slim" checked disabled>
                 <label for="slim">Похудение</label>
               </li>
               <li class="purpose__item">
@@ -269,11 +270,11 @@
               <div class="contacts__wrapper">
                 <div class="contacts__unit">
                   <label class="contacts__header contacts__email" for="email">E-mail:<sup>*</sup></label>
-                  <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 </div>
                 <div class="contacts__unit">
                   <label class="contacts__header contacts__phone" for="phone">Телефон:<sup>*</sup></label>
-                  <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$" minlength = "11" required>
+                  <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$" minlength = "11" required>
                 </div>
               </div>
             </div>
@@ -289,7 +290,7 @@
               <div class="addition">
                 <ul class="addition__list">
                   <li class="addition__item">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="addition-sweetener" id="sweetener" checked>
+                    <input class="form__checkbox visually-hidden" type="checkbox" name="addition-sweetener" id="sweetener" checked disabled>
                     <label for="sweetener">Сахарозаменитель</label>
                   </li>
                   <li class="addition__item">
@@ -321,7 +322,13 @@
             <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533234!2d30.32085871608202!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1595846934013!5m2!1sru!2sby" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        <div id="map" class="location__map">
+           <picture>
+             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
+             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
+             <img class="location__map-picture location__map-picture--nojs" src="img/bg-map-mobile@1x.png" loading="lazy" width="320" height="362" alt="Карта Санкт-Петербурга с указателем адреса ул. Большая Конюшенная, д. 19/8">
+           </picture>
+       </div>
       </section>
     </main>
     <footer class="page__footer">
@@ -421,19 +428,7 @@
       </div>
     </div>
     </footer>
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    navMain.classList.remove('main-nav--nojs');
-    navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2tBpCxnbLASCcWR2pjKGbZ6lBU7Xbv4s&callback=initMap&libraries=&v=weekly" defer></script>
   </body>
 </html>

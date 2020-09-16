@@ -58,8 +58,9 @@
     width: 570px;
     top: 95px;
     justify-content: flex-start;
-    left: 107px;
+    left: 105px;
     padding-bottom: 62px;
+    z-index: 2;
   }
 }
 
@@ -103,5 +104,16 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+}
+
+.location__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
   }
 }

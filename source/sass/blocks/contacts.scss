@@ -65,53 +65,6 @@
   }
 }
 
-.contacts__email {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 17px;
-    height: 13px;
-    background-image: url("../img/icon-mail.svg");
-    top: 9px;
-    left: 247px;
-
-    @media (min-width: $tablet-width) {
-      left: 596px;
-      top: 14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 531px;
-    }
-  }
-}
-
-.contacts__phone {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 23px;
-    height: 18px;
-    background-image: url("../img/icon-phone.svg");
-    top: 5px;
-    left: 249px;
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      left: 594px;
-      top: 11px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 536px;
-    }
-  }
-}
-
 .contacts__header {
   margin-top: 6px;
 }

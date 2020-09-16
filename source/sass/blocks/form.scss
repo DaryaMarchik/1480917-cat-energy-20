@@ -142,12 +142,84 @@
   background-image: url("../img/icon-tick.svg");
   top: 8px;
   left: -39px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     left: -48px;
   }
 }
 
-input::placeholder {
+.form__radio + label,
+.form__checkbox + label {
+  cursor: pointer;
+}
+
+.form__radio:disabled + label,
+.form__checkbox:disabled + label {
+  cursor: default;
+}
+
+.form__radio:disabled + label::before,
+.form__checkbox:disabled + label::before,
+.form__radio:disabled + label::after,
+.form__checkbox:disabled + label::after {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.form__input::placeholder {
+  color: #444444;
   opacity: 1;
+}
+
+.form__input-icon {
+  display: block;
+  position: absolute;
+}
+
+.form__input-icon--email {
+  width: 18px;
+  height: 13px;
+  top: 16px;
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 19px;
+    right: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 533px;
+    top: 20px;
+  }
+}
+
+.form__input-icon--phone {
+  width: 20px;
+  height: 20px;
+  bottom: 15px;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 89px;
+    right: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 51px;
+    top: 16px;
+  }
+}
+
+.form__input-field {
+  @media (min-width: $tablet-width) {
+    &:focus + .form__input-icon,
+    &:active + .form__input-icon {
+        fill: $basic-green;
+      }
+
+    &:required:invalid + .form__input-icon {
+      fill: #FF8282;
+    }
+  }
 }

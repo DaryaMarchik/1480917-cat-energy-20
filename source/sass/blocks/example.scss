@@ -286,3 +286,9 @@
     margin-left: 211px;
   }
 }
+
+.example__cost-value {
+  @media (min-width: $desktop-width) {
+    margin-left: 55px;
+  }
+}

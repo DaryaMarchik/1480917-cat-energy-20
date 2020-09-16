@@ -250,7 +250,7 @@
           <fieldset>
             <ul class="purpose">
               <li class="purpose__item">
-                <input class="visually-hidden form__radio" type="radio" name="purpose" value="slim" id="slim" checked disabled>
+                <input class="visually-hidden form__radio" type="radio" name="purpose" value="slim" id="slim" checked>
                 <label for="slim">Похудение</label>
               </li>
               <li class="purpose__item">
@@ -270,11 +270,22 @@
               <div class="contacts__wrapper">
                 <div class="contacts__unit">
                   <label class="contacts__header contacts__email" for="email">E-mail:<sup>*</sup></label>
-                  <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="form__input form__input-field form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="form__input-icon form__input-icon--email" width="17" height="34" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                    <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                  </svg>
                 </div>
                 <div class="contacts__unit">
                   <label class="contacts__header contacts__phone" for="phone">Телефон:<sup>*</sup></label>
-                  <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$" minlength = "11" required>
+                  <input class="form__input form__input-field form__input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$" minlength = "11" required>
+                  <svg class="form__input-icon form__input-icon--phone" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                    <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                    <path
+                      d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                    c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                    C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                    C7.8,20,8.1,19.7,8.1,19.4z"/>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -290,7 +301,7 @@
               <div class="addition">
                 <ul class="addition__list">
                   <li class="addition__item">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="addition-sweetener" id="sweetener" checked disabled>
+                    <input class="form__checkbox visually-hidden" type="checkbox" name="addition-sweetener" id="sweetener" checked>
                     <label for="sweetener">Сахарозаменитель</label>
                   </li>
                   <li class="addition__item">
@@ -319,16 +330,16 @@
         <div class="container">
           <div class="location__wrapper">
             <h3 class="location__headline">Приглашаем <br> к сотрудничеству дилеров!</h3>
-            <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></p>
           </div>
         </div>
         <div id="map" class="location__map">
-           <picture>
-             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
-             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
-             <img class="location__map-picture location__map-picture--nojs" src="img/bg-map-mobile@1x.png" loading="lazy" width="320" height="362" alt="Карта Санкт-Петербурга с указателем адреса ул. Большая Конюшенная, д. 19/8">
-           </picture>
-       </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
+            <img class="location__map-picture location__map-picture--nojs" src="img/bg-map-mobile@1x.png" loading="lazy" width="320" height="362" alt="Карта Санкт-Петербурга с указателем адреса ул. Большая Конюшенная, д. 19/8">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="page__footer">

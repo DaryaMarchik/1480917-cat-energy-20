@@ -1,4 +1,4 @@
-.description__wrapper {
+.description {
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
@@ -8,7 +8,7 @@
   }
 }
 
-.description {
+.description__wrapper {
   grid-row: 1;
   grid-column: 2;
   min-height: 112px;
